@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    width: 80%;
+    margin: 40px auto;
+}
+
+.header {
+    display: flex;
+}
+
+.card {
+    margin-left: 10px;
+}
+
+.header-first {
+    height: 50px;
+    width: 30%;
+}
+
+.header-second {
+    height: 50px;
+    width: 20%;
+}
+
+.header-third {
+    height: 50px;
+    width: 5%;
+}
+
+.header-fourth {
+    height: 50px;
+    width: 5%;
+}
+
+.header-fifth {
+    height: 50px;
+    width: 5%;
+}
+
+.header-sixth {
+    height: 50px;
+    width: 5%;
+}
+
+.header-sup {
+    color: red;
+}
+
+.body-form {
+    width: 100%;
+    height: 350px;
+    display: grid;
+    grid-template-areas: 
+        'Enrollment Enrollment Enrollment Class Keywords'
+        'Consent Consent Consent Class Keywords'
+        'Limit Limit Limit Class Keywords'
+        'Prerequisite Prerequisite Prerequisite Class Keywords'
+        'Prerequisite Prerequisite Prerequisite Class Keywords';
+}
+
+.body-class {
+    border: 1px solid rgba(219, 219, 219);
+}
+
+.Enrollment {
+    grid-area: Enrollment;
+    background-color: #f0f2f5;
+}
+
+.Class {
+    grid-area: Class;
+    background-color: #f0f2f5;
+}
+
+.Keywords {
+    grid-area: Keywords;
+    background-color: #f0f2f5;
+}
+
+.Consent {
+    grid-area: Consent;
+    background-color: #e9eef7;
+}
+
+.Limit {
+    grid-area: Limit;
+    background-color: #f0f2f5;
+}
+
+.Prerequisite {
+    grid-area: Prerequisite;
+    background-color: #e9eef7;
+}
+
+.inner {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    margin: 10px;
+}
+
+.inner-inner {
+    margin-left: 10px;
+}
+
+.inner-class {
+    margin: 10px;
+}
+
+.prequ {
+    display: flex;
+}
+
+.footer {
+    height: 120px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 4fr 1fr;
+    grid-template-areas:
+    'Approvals Date Comment .';
+}
+
+.Approvals {
+    margin: 10px;
+    grid-area: Approvals;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.Date {
+    height: fit-content;
+    margin: 10px;
+    grid-area: Date;
+    justify-content: space-evenly;
+}
+
+.Comment {
+    grid-area: Comment;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    margin: 10px;
+    justify-content: space-evenly;
+}
+
+.footer-div {
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    border: 1px solid rgba(219, 219, 219);
+}
+
